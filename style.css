@@ -27,7 +27,7 @@ header{
 }
 
 header h1{
-    color: #dc3545;
+    color: #A7D129;
     font-size: 2.5rem;
 }
 
@@ -55,8 +55,8 @@ header .navegacao-primaria li a{
     grid-template-columns: 1fr 1fr;
     justify-content: space-around;
     align-items: center;
-    gap: 60px;
-    padding: 60px;
+    gap: 33px;
+    padding: 36px;
 
     background-color: #000;
 }
@@ -76,18 +76,28 @@ header .navegacao-primaria li a{
 .section-div div p{
     color: #fff;
     font-weight: 200;
+    
 }
 
 .section-div div a{
     color: #fff;
     justify-self: start;
-    padding: 15px 40px;
+    padding: 15px ;
     border-radius: 5px;
     border: 2px solid #fff;
+    font-size: 1.1rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.section-div a:hover{
+    transition: .2s ease-in;
+    background-color: #616F39;
 }
 
 .section-div img{
-    max-width: 100%;    
+    max-width: 100%;
+    border-radius: 4px;    
 }
 
 .digitando::after{
@@ -147,7 +157,7 @@ main .sobre_titulo{
 
 main .sobre_titulo h1{
     font-size: 2.5rem;
-    color: #dc3545;
+    color: #A7D129;
 }
 
 
@@ -170,7 +180,7 @@ main .sobre_titulo span{
     height: 20px;
     width: 20px;
     border-radius: 50%;
-    background-color: #ff5d56;
+    background-color: #616F39;
 }
 
 main .sobre img{
@@ -188,13 +198,19 @@ main .sobre img:hover{
 }
 
 main .sobre_conteudo{
-    animation: sobeSecao .6s ease-in-out forwards;
-    grid-column: 2/-1;
-    display: grid;    
+    animation: sobeSecao .6s ease-in-out forwards;    
+    display: grid; 
+    grid-column: 1/-1;
+    grid-template-columns: 1fr 1fr;
     color: #707070;
 
 }
 
+main .sobre_texto{
+    display: grid;
+    grid-column: 1/-1;
+    grid-template-columns: 1f 1f;
+}
 
 main .sobre_texto h1{
     font-size: 2.3rem;
@@ -204,7 +220,7 @@ main .sobre_texto h1{
 
 main .sobre_texto h1::after{
     display: block;
-    background-color: #ff5d56;
+    background-color: #616F39;
     height: 6px;
     width: 60px;
     content: '';
@@ -213,15 +229,26 @@ main .sobre_texto h1::after{
 
 }
 
+main .sobre_texto p{
+    font-size: 1.3rem;
+    grid-row: 2;
+    grid-column: 1/-1;
+}
+
 main .sobre_info{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 1/-1;
     gap: 15px;
 }
 
 
 main .sobre_info i{
-    color: #dc3545;
+    color: #A7D129;
+    display: inline-block;
     padding-right: 10px;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
 }
 
 @keyframes sobeSecao{
@@ -240,4 +267,92 @@ main .sobre_info i{
     }to{
         transform: translate3d(0,0,0);
     }
+}
+
+/*Services*/
+
+section .sobre_titulo{
+    margin: 30px 0;
+    grid-column: 1/-1;
+    text-align: center;
+    color: #fff;
+}
+
+
+section .sobre_titulo h1{
+    font-size: 2.5rem;
+    color: #A7D129;
+}
+
+
+section .sobre_titulo p{
+    color: #707070;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    position: relative;
+    
+}
+
+section .sobre_titulo div{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+section .sobre_titulo span{
+    display: block;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #616F39;
+}
+
+section .my_services{
+    color: #fff;
+}
+
+
+/*Reponsivo*/
+
+@media(max-width: 992px){
+ .section-div img{
+    display: none;
+ }
+
+ .section-div{
+    max-width: 100%;
+    background-image: url(imagens/foto2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+ }
+ .section-div .intro{
+    background: rgba(0,0,0,0.4);
+    font-weight: 500;
+    border-radius: 16px;
+    color: #A7D129;
+ }
+
+ header .navegacao-primaria{
+    display: none;
+ }
+
+ header i{
+    color: #f7f7f7;
+    font-size: 3rem;
+
+ } 
+
+}
+
+@media(max-width: 992px){
+    .sobre img{
+        grid-column: 1/-1;
+        justify-self: center;
+    }
+
+    .sobre_conteudo{
+        grid-column: 1/-1;
+    }
+
 }
