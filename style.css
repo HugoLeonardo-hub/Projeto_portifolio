@@ -133,7 +133,7 @@ header .navegacao-primaria li a{
 /*Seção principal sobre mim*/
 
 main {
-    background-color: #111;
+    background-color: #151515;
     color: white;
     border-radius: 5px;
 }
@@ -236,11 +236,12 @@ main .sobre_texto p{
 }
 
 main .sobre_info{
-    margin-top: 30px;
+    margin-top: 30px;    
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column: 1/-1;
     gap: 15px;
+
 }
 
 
@@ -311,6 +312,44 @@ section .my_services{
     color: #fff;
 }
 
+
+/*Seção services*/
+
+.services{
+    background-color: #151515;
+    margin-top: -30px;
+    padding: 40px;
+
+}
+
+.my_services{
+    padding: 20px; 
+    
+}
+
+.my_services ul{
+    display: flex;      
+    gap: 20px;      
+    flex-wrap: wrap;
+    align-items: center;   
+    justify-content: center; 
+
+}
+.my_services ul li{
+    cursor: pointer;
+
+    position: relative;
+    padding: 10px;
+    display: grid;
+    gap: 30px; 
+    text-align: center;
+    max-width: 300px;
+    background-color: #222;
+    border-radius: 8px;
+
+
+                   
+}
 
 /*Reponsivo*/
 
