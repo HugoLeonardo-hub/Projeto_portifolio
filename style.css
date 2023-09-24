@@ -37,15 +37,36 @@ header span{
 
 header .navegacao-primaria{
     display: flex;
-    gap: 10px;
+    gap: 30px;
     align-items: center;
 
 }
+
 header .navegacao-primaria li a{
-    padding: 10px;
+    width: 0px;
+    height: 0px;
     color: #fff;
     font-size: 1.3rem;
 }
+
+header .navegacao-primaria li a::after{
+    content: '';
+    width: 10px;
+    height: 0px;
+    display: block;
+    border-bottom: 4px solid transparent;
+    transition: .9s;
+}
+
+header .navegacao-primaria li a:hover::after{
+    width: 100%;
+    height: 0px;
+    padding: 0px;
+    border-bottom: 4px solid #A7D129;    
+}
+
+ 
+
 
 /*Download CV seção*/
 
@@ -279,12 +300,10 @@ section .sobre_titulo{
     color: #fff;
 }
 
-
 section .sobre_titulo h1{
     font-size: 2.5rem;
     color: #A7D129;
 }
-
 
 section .sobre_titulo p{
     color: #707070;
@@ -308,79 +327,156 @@ section .sobre_titulo span{
     background-color: #616F39;
 }
 
-section .my_services{
-    color: #fff;
-}
-
 
 /*Seção services*/
 
-.services{
-    background-color: #151515;
+.services {
     margin-top: -30px;
-    padding: 40px;
-
+    padding: 60px;
+    background-color: #151515;
 }
 
-.my_services{
-    padding: 20px; 
-    
+
+.my_services {
+    padding: 60px;
+    color: white;
 }
 
-.my_services ul{
-    display: flex;      
-    gap: 20px;      
+.my_services ul {
+    display: flex;
     flex-wrap: wrap;
-    align-items: center;   
-    justify-content: center; 
-
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
 }
-.my_services ul li{
-    cursor: pointer;
 
+.my_services ul li {
+    cursor: pointer;
+    border-radius: 6px;
     position: relative;
     padding: 10px;
     display: grid;
-    gap: 30px; 
+    gap: 30px;
     text-align: center;
     max-width: 300px;
+    align-content: center;
+    height: 300px;
     background-color: #222;
-    border-radius: 8px;
-
-
-                   
 }
+
+.my_services ul li i {
+    font-size: 2.7rem;
+    color: #A7D129;
+}
+
+.my_services ul li h3 {
+    color: #fff;
+    font-size: 1.6rem;
+    font-family: 'poppins';
+    font-weight: 500;
+}
+
+.my_services ul li p {
+    color: #a3a3a3;
+    font-size: 1.1rem;
+}
+
+.my_services li::before {
+    content: '';
+    transition: .5s ease-in-out;
+    border-radius: 6px;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    border-top: 2px solid transparent;
+    border-right: 2px solid transparent;
+}
+
+.my_services li::after {
+    content: '';
+    transition: .5s ease-in-out;
+    border-radius: 6px;
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    bottom: -2px;
+    left: -2px;
+    border-bottom: 2px solid transparent;
+    border-left: 2px solid transparent;
+}
+
+.my_services li:hover::before {
+    width: 100%;
+    height: 100%;
+    border-top: 2px solid #616F39;
+    border-right: 2px solid #616F39;
+}
+
+.my_services li:hover::after {
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid #A7D129;
+    border-left: 2px solid #A7D129;
+}
+   
+
+
 
 /*Reponsivo*/
 
 @media(max-width: 992px){
  .section-div img{
-    display: none;
+    display: none;    
  }
 
  .section-div{
-    max-width: 100%;
+    
     background-image: url(imagens/foto2.jpeg);
     background-repeat: no-repeat;
-    background-size: cover;
-    
+    background-size: cover;   
  }
+
  .section-div .intro{
     background: rgba(0,0,0,0.4);
     font-weight: 500;
+    position: relative;
     border-radius: 16px;
     color: #A7D129;
  }
 
+ header{
+    justify-content: space-between;
+    padding: 30px 70px;
+ }
+
+
  header .navegacao-primaria{
     display: none;
  }
-
+ 
  header i{
     color: #f7f7f7;
     font-size: 3rem;
-
  } 
+ 
+ header .navegacao-primaria.ativado{
+    background: linear-gradient(rgba(43,42,42,0.176), rgba(46,46,46,0.724));
+    z-index: 5;
+    position: absolute;
+    display: grid;
+    top: 80px;
+    color: #fff;
+    padding: 30px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    border-radius: 0 0 8px 8px;
+    right: 20px;
+    animation: sobeSecao .8s ease-in-out forwards;
+
+ }
+
 
 }
 
