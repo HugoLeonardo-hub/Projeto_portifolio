@@ -349,8 +349,7 @@ section .sobre_titulo p{
     color: #707070;
     font-size: 1.4rem;
     margin-bottom: 1rem;
-    position: relative;
-    
+    position: relative;    
 }
 
 section .sobre_titulo div{
@@ -372,14 +371,14 @@ section .sobre_titulo span{
 
 .services {
     margin-top: -30px;
-    padding: 60px;
+    padding: 30px;
     background-color: #151515;
 }
 
 
 .my_services {
     padding: 60px;
-    color: white;
+    color: #fff;
 }
 
 .my_services ul {
@@ -606,6 +605,21 @@ section .sobre_titulo span{
     color: #707070;
     font-size: 1.1rem;
 }
+
+/*Habilidades*/
+.skills{
+    background-color: white;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+
+
+
+
+
+
+
 
 
 

@@ -1,4 +1,5 @@
 
+
 function escrevendoLetra(){
     function ativaLetra(elemento){
         const arrTexto = elemento.innerHTML.split('');
