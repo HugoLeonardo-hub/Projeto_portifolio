@@ -768,6 +768,13 @@ section .sobre_titulo span{
  .my_services {
     padding: 40px;
  }
+ 
+ main .sobre_info {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-column: 1/-1;
+    gap: 15px;
 
 
 }
