@@ -655,7 +655,7 @@ section .sobre_titulo span{
     background-color: #151515;
 }
 
-.projects ul {
+.projects ul {   
     display: flex;
     justify-content: center;
     gap: 30px;
@@ -670,11 +670,11 @@ section .sobre_titulo span{
     color: #707070;
 }
 
-.projects_models ul li.active {
+/*.projects_models ul li.active {
     background-color: #dc3545;
     color: #151515;
     font-weight: bold;
-}
+}*/
 
 .projects_storage ul {
     display: grid;
@@ -685,7 +685,7 @@ section .sobre_titulo span{
 }
 
 .projects_storage ul li{
-    display: none;
+    dsplay: none;
     max-width: 100%;
     height: 100%;
 }
@@ -777,6 +777,7 @@ section .sobre_titulo span{
     gap: 15px;
 
 
+ }
 }
 
 @media (max-width: 1089px){
