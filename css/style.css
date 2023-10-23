@@ -63,11 +63,13 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-around;    
+       
 }
 
 header h1{
     color: #A7D129;
     font-size: 2.5rem;
+    
 }
 
 header span{
@@ -685,7 +687,7 @@ section .sobre_titulo span{
 }
 
 .projects_storage ul li{
-    dsplay: none;
+    display: none;
     max-width: 100%;
     height: 100%;
 }
@@ -716,7 +718,7 @@ section .sobre_titulo span{
 
 @media(max-width: 992px){
  .section-div img{
-    disply: none;    
+    display: none;    
  }
 
  .section-div{
