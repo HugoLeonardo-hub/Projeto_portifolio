@@ -235,6 +235,7 @@ main .sobre_titulo div{
     display: flex;
     gap: 10px;
     justify-content: center;
+    
 }
 
 main .sobre_titulo span{
@@ -672,11 +673,11 @@ section .sobre_titulo span{
     color: #707070;
 }
 
-/*.projects_models ul li.active {
-    background-color: #dc3545;
+.projects_models ul li.active {
+    background-color: #A7d129;
     color: #151515;
     font-weight: bold;
-}*/
+}
 
 .projects_storage ul {
     display: grid;
@@ -723,17 +724,60 @@ section .sobre_titulo span{
     }
 }
 
+.contact{
+    margin: 30px 0;
+    grid-column: 1/-1;
+    text-align: center;
+    color: #fff;
+}
+.contact h1{
+    font-size: 2.5rem;
+    color: #A7D129;
+}
+
+
+.contact p{
+    color: #707070;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    position: relative;
+    
+}
+
+.contact div{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.contact span{
+    display: block;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #616F39;
+}
+
+.contact a{
+    color: #616F39;
+    transition: all .3s ease-in-out;
+}
+.contact a:hover{
+    color: #A7D129;
+}
 
 /*Reponsivo*/
 
 @media(max-width: 992px){
  .section-div img{
-    display: none;    
+   display: none;
+    
+        
  }
 
  .section-div{
-    
-    background-image: url(imagens/foto2.jpeg);
+    background-image: url("../imagens/foto2.jpeg");
     background-repeat: no-repeat;
     background-size: cover;   
  }
