@@ -155,3 +155,9 @@ buttomGeral.forEach((item)=>{
         }
     })
 })
+
+const btn = document.getElementById("btnTop")
+
+btn.addEventListener("click", function(){
+    window.scrollTo({top: 0, behavior: 'smooth'});
+})
