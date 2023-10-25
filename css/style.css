@@ -767,6 +767,42 @@ section .sobre_titulo span{
     color: #A7D129;
 }
 
+/*Botões*/
+
+.botao-redondo {
+    width: 100px;
+    height: 100px;
+
+    padding:  18px;
+    border-radius: 50%;
+    color: #fff;    
+    bottom: 100px;    
+    cursor: pointer;       
+    right: 3%;
+    position: fixed;    
+    
+
+    
+    
+}
+
+.bandeira {
+    width: 100%;
+    height: 100%;
+    background-image: url('../imagens/bandeira-do-brasil-em-fundo-branco.png');
+    background-size: cover;
+    display: block;
+}
+
+.myButton:hover {
+	background:linear-gradient(to bottom, #5cb811 5%, #77d42a 100%);
+	background-color:#5cb811;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
 #btnTop{
     background-color: #616F39;
     padding:  18px;
