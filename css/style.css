@@ -770,21 +770,22 @@ section .sobre_titulo span{
 /*Botões*/
 
 .botao-redondo {
-    width: 100px;
-    height: 100px;
+    width: 97px;
+    height: 97px;
 
     padding:  18px;
     border-radius: 50%;
     color: #fff;    
-    bottom: 100px;    
+    bottom: 105px;    
     cursor: pointer;       
-    right: 3%;
-    position: fixed;    
-    
-
-    
+    right: 4%;
+    position: fixed;     
     
 }
+.botao-redondo:hover{
+    transform: scale(1.1);
+}
+
 
 .bandeira {
     width: 100%;
@@ -795,6 +796,7 @@ section .sobre_titulo span{
 }
 
 .myButton:hover {
+    transform: scale(1.1);
 	background:linear-gradient(to bottom, #5cb811 5%, #77d42a 100%);
 	background-color:#5cb811;
 }
@@ -810,7 +812,7 @@ section .sobre_titulo span{
     color: #fff;    
     bottom: 50px;    
     cursor: pointer;       
-    right: 3%;
+    right: 9%;
     position: fixed;    
     box-shadow: 0 0 10px rgba(112, 112, 112, 0.3);
 
